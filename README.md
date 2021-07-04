@@ -18,6 +18,8 @@ in then it will skip about.  This is still enough to test the basic operation of
 
 This is complete and I have had boards made at PCBWay using the .zip file included in the hardware/v01 directory.
 
+![Completed v01 board](/images/v01/pcb.jpg)
+
 ## v02 : Hardware and Software - WIP
 
 Do NOT use the hardware or software - this is WIP
