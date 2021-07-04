@@ -1,16 +1,17 @@
 # Z80Processor_Tester
 This is a simple tester PCB for Z80 processors.  I use it for testing processors taken from ZX81 and Spectrums that I am fixing... also to test processors that I buy online.
 
-##Software
+## Software
 
 The software is written in MPLab X to be used on a PIC 16F690 microcontroller
 
-
-##Hardware
+## Hardware
 
 The PCB is designed in KiCad and all the necessary files are provided to create your own version
 
-# v01 : Hardware and Software
+# Versions and updates
+
+## v01 : Hardware and Software
 
 Initial version that cycles through the address by returning a NOP instructuction (all zeros).  The leds will cycle through a binary sequence until the ram refresh kicks
 in then it will skip about.  This is still enough to test the basic operation of the chip and has enabled me to verify several dead Z80's.
