@@ -15,7 +15,7 @@ The PCB is designed in KiCad and all the necessary files are provided to create 
 
 Initial version that cycles through the address lines by returning a NOP instructuction (all zeros) for every address.  The leds will cycle through a binary sequence until the ram refresh kicks in then it will skip about.  This is still enough to test the basic operation of the chip and has enabled me to verify several dead Z80's.
 
-This is complete and I have had boards made at PCBWay using the .zip file in the releases tab and also included in the hardware/v01 directory.
+This is complete and I have had boards made at PCBWay using the .zip file in the releases tab and also included in the hardware/v01 directory.  THe PCB has a non-standard DC barrel jack footprint.  I was unable to find a component to match so I 'bodged' a normal jack.
 
 ![v01 PCB](/images/v01/pcb.jpg)
 
