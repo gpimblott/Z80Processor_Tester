@@ -3,15 +3,15 @@
 [d edition pro ]
 [d chip 16F690 ]
 [d frameptr 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"28 M:\Users\gordo\MPLABXProjects\Z80Tester.X\Z80Tester.c
+"28 C:\Users\gordo\OneDrive\Documents\GitHub\Z80Processor_Tester\software\v01\Z80Tester.X\Z80Tester.c
 [v _initHW initHW `(v  1 e 1 0 ]
 "85
 [v _main main `(i  1 e 2 0 ]
@@ -76,7 +76,7 @@
 [v _RC1 RC1 `VEb  1 e 0 @57 ]
 "4155
 [v _WPUB4 WPUB4 `VEb  1 e 0 @2220 ]
-"85 M:\Users\gordo\MPLABXProjects\Z80Tester.X\Z80Tester.c
+"85 C:\Users\gordo\OneDrive\Documents\GitHub\Z80Processor_Tester\software\v01\Z80Tester.X\Z80Tester.c
 [v _main main `(i  1 e 2 0 ]
 {
 "97

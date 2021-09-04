@@ -1,11 +1,11 @@
-Microchip MPLAB XC8 Compiler V2.32
+Microchip MPLAB XC8 Compiler V2.31
 
 Linker command line:
 
--W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Z80Tester.X.production.sym \
   --cmf=dist/default/production\Z80Tester.X.production.cmf -z -Q16F690 \
-  -oC:\Users\gordo\AppData\Local\Temp\xcAs88g.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\gordo\AppData\Local\Temp\s68c.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Z80Tester.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=020h-06Fh -pstack=STACK \
   -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 \
@@ -17,8 +17,7 @@ Linker command line:
   -AIDLOC=02000h-02003h -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry,init,end_init -ppowerup=CODE \
-  -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\gordo\AppData\Local\Temp\xcAs88g.o \
+  -pcinit=CODE -pfunctab=ENTRY -k C:\Users\gordo\AppData\Local\Temp\s68c.o \
   dist/default/production\Z80Tester.X.production.o 
 
 Object code version is 3.11
@@ -28,17 +27,17 @@ Machine type is 16F690
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\gordo\AppData\Local\Temp\xcAs88g.o
+C:\Users\gordo\AppData\Local\Temp\s68c.o
                 end_init                              0        0        2        0       0
                 config                             2007     2007        1        0       4
 dist/default/production\Z80Tester.X.production.o
                 cinit                               7F9      7F9        7      FF2       0
                 config                             2007     2007        1        0       4
-                text1                               7AD      7AD       24      F5A       0
-                maintext                            7D1      7D1       28      FA2       0
-                cstackCOMMON                         70       70        7       70       1
-                dataCOMMON                           77       77        1       70       1
-                idataCOMMON                         7AC      7AC        1      F58       0
+                text1                               7D5      7D5       24      FAA       0
+                maintext                            7B5      7B5       20      F6A       0
+                cstackCOMMON                         70       70        6       70       1
+                dataCOMMON                           76       76        1       70       1
+                idataCOMMON                         7B4      7B4        1      F68       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -46,9 +45,9 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   CODE           
                 end_init                              0        0        2         0
                 cinit                               7F9      7F9        7         0
-                text1                               7AD      7AD       24         0
-                maintext                            7D1      7D1       28         0
-                idataCOMMON                         7AC      7AC        1         0
+                text1                               7D5      7D5       24         0
+                maintext                            7B5      7B5       20         0
+                idataCOMMON                         7B4      7B4        1         0
 
         CLASS   STRCODE        
 
@@ -59,8 +58,8 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   ENTRY          
 
         CLASS   COMMON         
-                cstackCOMMON                         70       70        7         1
-                dataCOMMON                           77       77        1         1
+                cstackCOMMON                         70       70        6         1
+                dataCOMMON                           76       76        1         1
 
         CLASS   BANK0          
 
@@ -95,10 +94,10 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                cstackCOMMON                   000070  000008  000078        70       1  COMMON      1
-                idataCOMMON                    0007AC  000001  0007AD       F58       0  CODE        2
-                text1                          0007AD  000024  0007D1       F5A       0  CODE        2
-                maintext                       0007D1  000028  0007F9       FA2       0  CODE        2
+                cstackCOMMON                   000070  000007  000077        70       1  COMMON      1
+                idataCOMMON                    0007B4  000001  0007B5       F68       0  CODE        2
+                maintext                       0007B5  000020  0007D5       F6A       0  CODE        2
+                text1                          0007D5  000024  0007F9       FAA       0  CODE        2
                 cinit                          0007F9  000007  000800       FF2       0  CODE        2
 
 
@@ -108,13 +107,13 @@ UNUSED ADDRESS RANGES
         BANK0            0020-006F             50           1
         BANK1            00A0-00EF             50           1
         BANK2            0120-016F             50           1
-        CODE             0002-07AB            7AA           2
+        CODE             0002-07B3            7B2           2
                          0800-0FFF            800
-        COMMON           0078-007D              6           1
-        CONST            0002-07AB            100           2
+        COMMON           0077-007D              7           1
+        CONST            0002-07B3            100           2
                          0800-0FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0002-07AB            100           2
+        ENTRY            0002-07B3            100           2
                          0800-0FFF            100
         IDLOC            2000-2003              4           2
         RAM              0020-006F             50           1
@@ -125,9 +124,9 @@ UNUSED ADDRESS RANGES
         SFR2             0100-011F             20           1
         SFR3             0180-01EF             70           1
         STACK            0020-006F             50           1
-        STRCODE          0002-07AB            7AA           2
+        STRCODE          0002-07B3            7B2           2
                          0800-0FFF            800
-        STRING           0002-07AB            100           2
+        STRING           0002-07B3            100           2
                          0800-0FFF            100
 
                                   Symbol Table
@@ -176,7 +175,7 @@ __Hsfr1                  sfr1         0000
 __Hsfr2                  sfr2         0000
 __Hsfr3                  sfr3         0000
 __Hspace_0               (abs)        0800
-__Hspace_1               (abs)        0078
+__Hspace_1               (abs)        0077
 __Hspace_2               (abs)        0000
 __Hspace_3               (abs)        0000
 __Hspace_4               (abs)        400F
@@ -218,7 +217,7 @@ __Lstack                 stack        0000
 __Lstrings               strings      0000
 __Ltext                  text         0000
 __S0                     (abs)        0800
-__S1                     (abs)        0078
+__S1                     (abs)        0077
 __S2                     (abs)        0000
 __S3                     (abs)        0000
 ___int_sp                stack        0000
@@ -227,18 +226,18 @@ ___sp                    stack        0000
 ___stackhi               (abs)        0000
 ___stacklo               (abs)        0000
 __end_of__initialization cinit        07FD
-__end_of_initHW          text1        07D1
-__end_of_main            maintext     07F9
+__end_of_initHW          text1        07F9
+__end_of_main            maintext     07D5
 __initialization         cinit        07F9
 __pcstackCOMMON          cstackCOMMON 0070
-__pdataCOMMON            dataCOMMON   0077
-__pidataCOMMON           idataCOMMON  07AC
-__pmaintext              maintext     07D1
-__ptext1                 text1        07AD
+__pdataCOMMON            dataCOMMON   0076
+__pidataCOMMON           idataCOMMON  07B4
+__pmaintext              maintext     07B5
+__ptext1                 text1        07D5
 __size_of_initHW         (abs)        0000
 __size_of_main           (abs)        0000
-_initHW                  text1        07AD
-_main                    maintext     07D1
+_initHW                  text1        07D5
+_main                    maintext     07B5
 btemp                    (abs)        007E
 end_of_initialization    cinit        07FD
 intlevel0                functab      0000
@@ -253,14 +252,76 @@ start_initialization     cinit        07F9
 wtemp0                   (abs)        007E
 
 
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 85 in file "Z80Tester.c"
+ Parameters:    Size  Location     Type
+  argc            2    0[COMMON] int 
+  argv            2    2[COMMON] PTR PTR unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2    0[COMMON] int 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2
+      Params:         4       0       0       0
+      Locals:         0       0       0       0
+      Temps:          2       0       0       0
+      Totals:         6       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels required when called:    1
+ This function calls:
+		_initHW
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _initHW *****************
+ Defined at:
+		line 28 in file "Z80Tester.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2
+      Params:         0       0       0       0
+      Locals:         0       0       0       0
+      Temps:          0       0       0       0
+      Totals:         0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 Z80Tester.c
-		_main          		CODE           	07D1	0000	40
-		_initHW        		CODE           	07AD	0000	36
+		_main          		CODE           	07B5	0000	32
+		_initHW        		CODE           	07D5	0000	36
 
-Z80Tester.c estimated size: 76
+Z80Tester.c estimated size: 68
 
 shared
 		__initialization		CODE           	07F9	0000	4

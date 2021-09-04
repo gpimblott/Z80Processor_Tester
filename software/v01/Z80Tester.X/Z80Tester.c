@@ -88,9 +88,9 @@ int main(int argc, char** argv) {
     while (1) {
 
         PORTC = 0b00000001;        
-        __delay_ms(100);
+        __delay_ms(10);
         PORTC = 0b00000010;
-        __delay_ms(100);
+        __delay_ms(10);
 
     }
     return 0;
